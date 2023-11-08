@@ -1,9 +1,10 @@
-#!/bin/csh
-set yname="foo"
-while ( $yname != "" )
-	echo -n "Enter your name : "
-	set yname = $<
-	if ( $yname != "" ) then
-		echo "Hi, $yname"
-	endif
-end
+#!/usr/bin/bash 
+
+a=7
+while [ $a -gt 4 ];
+do
+    echo $a
+    ((a--))
+done
+
+echo "Out of the loop"
